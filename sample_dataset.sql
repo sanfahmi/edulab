@@ -1,0 +1,95 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 14, 2021 at 01:11 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.2.33
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `sample_dataset`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dataset`
+--
+
+CREATE TABLE `dataset` (
+  `user_id` varchar(100) NOT NULL,
+  `cabang_belajar` varchar(10) NOT NULL,
+  `total_biaya` int(50) NOT NULL,
+  `potongan` int(50) NOT NULL,
+  `dp` int(50) NOT NULL,
+  `angsuran1` int(50) NOT NULL,
+  `angsuran2` int(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `dataset`
+--
+
+INSERT INTO `dataset` (`user_id`, `cabang_belajar`, `total_biaya`, `potongan`, `dp`, `angsuran1`, `angsuran2`) VALUES
+('A001', 'A', 9000000, 3000000, 1000000, 0, 0),
+('A002', 'A', 9000000, 2500000, 1000000, 0, 0),
+('A003', 'B', 9000000, 1500000, 1000000, 1000000, 0),
+('A004', 'C', 9000000, 1500000, 7500000, 0, 0),
+('A005', 'A', 9000000, 2500000, 6500000, 0, 0),
+('A006', 'A', 9000000, 2500000, 2000000, 0, 0),
+('A007', 'C', 9000000, 2500000, 2000000, 0, 0),
+('A008', 'A', 9000000, 2500000, 2500000, 0, 0),
+('A009', 'B', 15000000, 6500000, 1500000, 1000000, 0),
+('A010', 'A', 9000000, 2500000, 6500000, 0, 0),
+('A011', 'A', 15000000, 4000000, 2000000, 1000000, 0),
+('A012', 'C', 9000000, 1500000, 2000000, 500000, 1500000),
+('A013', 'D', 9000000, 2500000, 1000000, 1000000, 1000000),
+('A014', 'D', 9000000, 2500000, 1500000, 1000000, 1000000),
+('A015', 'D', 15000000, 5000000, 10000000, 0, 0),
+('A016', 'A', 9000000, 2000000, 1000000, 1000000, 0),
+('A017', 'D', 9000000, 2500000, 2000000, 0, 1000000),
+('A018', 'D', 9000000, 2500000, 1000000, 1000000, 1000000),
+('A019', 'A', 9000000, 3000000, 1000000, 1000000, 0),
+('A020', 'D', 9000000, 1500000, 2000000, 1000000, 1000000),
+('A021', 'A', 9000000, 2500000, 1300000, 800000, 1000000),
+('A022', 'A', 9000000, 2500000, 1300000, 800000, 1000000),
+('A023', 'D', 9000000, 2500000, 1300000, 2000000, 800000),
+('A024', 'D', 9000000, 2500000, 3800000, 0, 0),
+('A025', 'D', 9000000, 2300000, 1000000, 1000000, 0),
+('A026', 'A', 9000000, 3000000, 3000000, 0, 1000000),
+('A027', 'A', 9000000, 3000000, 3000000, 0, 0),
+('A028', 'A', 9000000, 2500000, 2000000, 1500000, 0),
+('A029', 'A', 4500000, 0, 4500000, 0, 0),
+('A030', 'A', 4800000, 0, 1000000, 0, 0),
+('A031', 'C', 4500000, 0, 4500000, 0, 0),
+('A032', 'C', 4500000, 0, 2000000, 0, 0),
+('A033', 'C', 4500000, 0, 2000000, 0, 0),
+('A034', 'B', 9000000, 3500000, 1500000, 0, 0),
+('A035', 'B', 4500000, 1500000, 1500000, 0, 0),
+('A036', 'B', 4500000, 0, 4500000, 0, 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `dataset`
+--
+ALTER TABLE `dataset`
+  ADD PRIMARY KEY (`user_id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
